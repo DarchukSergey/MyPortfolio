@@ -1,0 +1,319 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    background: #E7E7E7;
+    &.news-bg {
+        background-color: #fff;
+    }
+    &.catalog-bg,
+    &.card-bg {
+        background-color: #fafafa;
+    }
+}
+
+.wrapper {
+    background: url(../images/main-bg.png) top left no-repeat;
+    background-size: 72% 736px;
+    padding-top: 30px;
+    &--no-bg {
+        background: none;
+    }
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1230px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+//  BUTTON
+.btn {
+    display: inline-block;
+    border: 2px solid $btn-color;
+    padding: 10px 30px;
+    background: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    color: $black;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s;
+    font-weight: 600;
+    &:hover {
+        color: #fff;
+        background: $btn-color;
+    }
+    &--black {
+        color: #fff;
+        background: #292929;
+    }
+}
+
+.btn-form {
+    display: inline-block;
+    border: 2px solid $btn-color;
+    padding: 14px 30px;
+    background: $btn-color;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+        color: #000;
+        background: #fff;
+    }
+}
+
+.button-wrapper {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    &--gray::after,
+    &--gray::before {
+        border: 3px solid #E7E7E7 !important;
+    }
+    &--black::after,
+    &--black::before {
+        border: 3px solid #292929 !important;
+    }
+}
+
+.button-wrapper::before,
+.button-wrapper::after {
+    content: "";
+    width: 20px;
+    height: 25px;
+    background-color: $btn-color;
+    border: 3px solid #fff;
+    position: absolute;
+    padding: 0;
+    transform: rotate(45deg);
+    z-index: 2;
+}
+
+.button-wrapper::before {
+    left: -8px;
+    top: -13px;
+    box-shadow: 2px 2px 0px $btn-color;
+}
+
+.button-wrapper::after {
+    right: -8px;
+    bottom: -13px;
+    box-shadow: -2px -2px 0px $btn-color;
+}
+
+.button-form {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    &--gray::after,
+    &--gray::before {
+        border: 3px solid #384270;
+    }
+}
+
+// .button-form {
+//     &::after,
+//     &::before {
+//         content: "";
+//         width: 20px;
+//         height: 25px;
+//         background-color: #E22121;
+//         border: 3px solid #384270;
+//         position: absolute;
+//         padding: 0;
+//         transform: rotate( 45deg);
+//         z-index: 2;
+//         border: 3px solid
+//     }
+// }
+.button-form::before,
+.button-form::after {
+    content: "";
+    width: 20px;
+    height: 25px;
+    background-color: $btn-color;
+    border: 3px solid #384270;
+    position: absolute;
+    padding: 0;
+    transform: rotate(45deg);
+    z-index: 2;
+}
+
+.button-form::before {
+    left: -8px;
+    top: -13px;
+    box-shadow: 2px 2px 0px $btn-color;
+}
+
+.button-form::after {
+    right: -8px;
+    bottom: -13px;
+    box-shadow: -2px -2px 0px $btn-color;
+}
+
+.button-more {
+    display: none;
+}
+
+.street {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 50px;
+    color: $black;
+    position: relative;
+    span {
+        font-weight: 800;
+        font-size: 80px;
+        color: rgba($black, .05);
+        position: absolute;
+        left: 50px;
+        white-space: nowrap;
+    }
+}
+
+// BREADCRUMB 
+.breadcrumb {
+    padding: 30px 0 50px 0;
+    &__list {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+    }
+    &__item {
+        padding-right: 32px;
+        color: #969696;
+        position: relative;
+        &:not(:last-child)::after {
+            content: '';
+            width: 12px;
+            height: 24px;
+            background: url(../images/delimiter.svg);
+            position: absolute;
+            top: 0;
+            right: 7px;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: $black;
+    }
+}
+
+// PAGINATION
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 27px 30px;
+    border: 10px solid #eee;
+    position: relative;
+    &::after {
+        content: '';
+        width: 32px;
+        height: 45px;
+        background-color: #fafafa;
+        border-left: 10px solid #eee;
+        position: absolute;
+        transform: rotate(45deg);
+        z-index: 2;
+        right: -14px;
+        bottom: -20px;
+    }
+    &::before {
+        content: '';
+        width: 35px;
+        height: 47px;
+        background-color: #fafafa;
+        border-left: 10px solid #eee;
+        position: absolute;
+        transform: rotate(-135deg);
+        z-index: 2;
+        left: -16px;
+        top: -22px;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        padding: 0 25px;
+        transition: all .3s;
+        &:hover {
+            transform: scale(1.2);
+            .pagination__link {
+                color: $btn-color;
+            }
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: $black;
+        font-size: 16px;
+        transition: all .3s;
+        &--active {
+            color: $btn-color;
+        }
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__arrow {
+        position: relative;
+		  transition: all .2s;
+		  &:hover {
+			  color: $btn-color;
+		  }
+        &--prev {
+            padding-left: 33px;
+            &::before {
+                content: '';
+                width: 23px;
+                height: 16px;
+                background: url(../images/link-decor.svg);
+                transform: rotate(180deg);
+                position: absolute;
+                left: 0;
+                top: 4px;
+            }
+				&:hover::before {
+					background: url(../images/link-decor-red.svg);
+				}
+        }
+        &--next {
+            padding-right: 33px;
+            &::after {
+                content: '';
+                width: 23px;
+                height: 16px;
+                background: url(../images/link-decor.svg);
+                position: absolute;
+                right: 0;
+                top: 4px;
+            }
+				&:hover::after {
+					background: url(../images/link-decor-red.svg);
+				}
+        }
+    }
+}

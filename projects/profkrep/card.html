@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточка товара</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="card-bg">
+    <div class="wrapper wrapper--no-bg">
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header__top">
+                <div class="header__logo">
+                    <a class="logo" href="index.html">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                    <span class="tagline">
+						Мы знаем все
+						о болтах!
+					</span>
+                </div>
+                <div class="button-wrapper header__btn">
+                    <a class="btn" href="#">Задать вопрос</a>
+                </div>
+                <div class="street header__street">
+                    <address class="adress">
+						<p class="adress__street">Юрина, 273-Г</p>
+						<a class="adress__phone" href="tel:+73852439247">+7 (3852) 43-92-47</a>
+					</address>
+                    <address class="adress">
+						<p class="adress__street">Балтийская, 55</p>
+						<a class="adress__phone" href="tel:+73852458971">+7 (3852) 45-89-71</a>
+					</address>
+                    <address class="adress">
+						<p class="adress__street">Папанинцев, 111</p>
+						<a class="adress__phone" href="tel:+73852227422">+7 (3852) 2 2-74-22</a>
+					</address>
+                </div>
+                <div class="cart">
+                    <img class="cart__img" src="images/icons/shopping-cart.svg" alt="cart">
+                    <div class="cart__box">
+                        <p class="cart__name">Корзина</p>
+                        <span class="cart__status">Корзина пуста</span>
+                    </div>
+                </div>
+            </div>
+            <nav class="menu">
+                <div class="catalog">
+                    <p class="catalog__text">Каталог продукции</p>
+                    <div class="catalog__btn">
+                        <span></span>
+                    </div>
+                    <ul class="sub-menu">
+                        <li class="sub-menu__item">
+                            <a class="sub-menu__link" href="catalog.html">
+								Саморезы
+							</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a class="sub-menu__link" href="catalog.html">
+								Инструмент
+							</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a class="sub-menu__link" href="catalog.html">
+								Нержавеющий <br>
+								Метрический крепеж
+							</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a class="sub-menu__link" href="catalog.html">
+								Латунированный крепеж
+							</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a class="sub-menu__link" href="catalog.html">
+								Русконнект
+							</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a class="sub-menu__link" href="catalog.html">
+								Электрика
+							</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a class="sub-menu__link" href="catalog.html">
+								Дюбельный крепеж
+							</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a class="sub-menu__link" href="catalog.html">
+								Автоаксессуары
+							</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a class="sub-menu__link" href="catalog.html">
+								Средства <br>
+								индивидуальной защиты
+							</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a class="sub-menu__link" href="catalog.html">
+								Метрический крепеж
+							</a>
+                        </li>
+                        <li class="sub-menu__item">
+                            <a class="sub-menu__link" href="catalog.html">
+								Заклепочный крепеж
+							</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__burger">
+                    <div class="burger__btn-wrapper">
+                        <div class="menu__burger__btn">
+                            <span></span>
+                        </div>
+                    </div>
+                    <ul class="burger__list">
+                        <li class="burger__item">
+                            <a class="burger__link" href="#">
+                            О компании
+                            </a>
+                        </li>
+                        <li class="burger__item">
+                            <a class="burger__link" href="card.html">
+                            Оплата
+                            </a>
+                        </li>
+                        <li class="burger__item">
+                            <a class="burger__link" href="#">
+                            Доставка
+                            </a>
+                        </li>
+                        <li class="burger__item">
+                            <a class="burger__link" href="#">
+                            Вакансии
+                            </a>
+                        </li>
+                        <li class="burger__item">
+                            <a class="burger__link" href="news.html">
+                            Новости
+                            </a>
+                        </li>
+                        <li class="burger__item">
+                            <a class="burger__link" href="#">
+                            Контакты
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <form class="search">
+                    <input class="search__input" type="text" placeholder="Поиск...">
+                    <div class="search__img">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13.09 13.09C15.865 10.3149 15.8758 5.82628 13.1139 3.06441C10.352 0.302545 5.86343 0.313258 3.08834 3.08834C0.313258 5.86343 0.302545 10.352 3.06441 13.1139C5.82628 15.8758 10.3149 15.865 13.09 13.09ZM13.09 13.09L19 19"
+								stroke="white" stroke-width="1.5" stroke-linecap="round" />
+						</svg>
+                    </div>
+                </form>
+            </nav>
+        </header>
+
+        <!-- MAIN -->
+        <main class="main">
+
+            <!-- BREADCRUMB -->
+            <nav class="breadcrumb">
+                <div class="container">
+                    <ul class="breadcrumb__list">
+                        <li class="breadcrumb__item">
+                            <a class="breadcrumb__link" href="#">Главная</a>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <a class="breadcrumb__link" href="#">Каталог</a>
+                        </li>
+                        <li class="breadcrumb__item">
+                            Шурупы
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <section class="product-card">
+                <div class="container">
+                    <div class="product-card__inner">
+
+                        <div class="product-card__slider-block">
+                            <div class="item">
+                                <div class="cap"></div>
+                                <div class="cap-strong cap-strong-top"></div>
+                                <div class="body">
+                                    <div class="content-wrap">
+                                        <div class="content-position">
+                                            <div class="content">
+                                                <div class="swiper-container product-card__slider">
+                                                    <!-- Additional required wrapper -->
+                                                    <div class="swiper-wrapper product-card__slider-wrapper">
+                                                        <!-- Slides -->
+                                                        <div class="swiper-slide product-card__slider-slide">
+                                                            <div class="swiper-slide product-card__slider-slide-wrapper">
+                                                                <img src="images/card-slide.png" alt="card-slide">
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide product-card__slider-slide">
+                                                            <div class="swiper-slide product-card__slider-slide-wrapper">
+                                                                <img src="images/card-slide.png" alt="card-slide">
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide product-card__slider-slide">
+                                                            <div class="swiper-slide product-card__slider-slide-wrapper">
+                                                                <img src="images/card-slide.png" alt="card-slide">
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide product-card__slider-slide">
+                                                            <div class="swiper-slide product-card__slider-slide-wrapper">
+                                                                <img src="images/card-slide.png" alt="card-slide">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Thums -->
+                                                    <div class="swiper-container product-card__slider-mini">
+                                                        <div class="swiper-wrapper product-card__slider-mini-wrapper">
+                                                            <div class="swiper-slide product-card__slider-slide-thumb">
+                                                                <div class=" product-card__slider-slide-thumb-wpapper">
+                                                                    <img src="images/thumb-slide-1.png" alt="card-slide">
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide product-card__slider-slide-thumb">
+                                                                <div class=" product-card__slider-slide-thumb-wpapper">
+                                                                    <img src="images/thumb-slide-2.png" alt="card-slide">
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide product-card__slider-slide-thumb">
+                                                                <div class=" product-card__slider-slide-thumb-wpapper">
+                                                                    <img src="images/thumb-slide-3.png" alt="card-slide">
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide product-card__slider-slide-thumb">
+                                                                <div class=" product-card__slider-slide-thumb-wpapper">
+                                                                    <img src="images/thumb-slide-4.png" alt="card-slide">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cap-strong cap-strong-bottom"></div>
+                                <div class="cap"></div>
+                            </div>
+                        </div>
+
+                        <div class="product-card__content">
+                            <h2 class="product-card__title">
+                                Шурупы
+                            </h2>
+                            <div class="product-card__table-wrapper">
+                                <div class="item">
+                                    <div class="cap"></div>
+                                    <div class="cap-strong cap-strong-top"></div>
+                                    <div class="cap-header">
+                                        <div class="cap-header-top"></div>
+                                        <div class="cap-header-bottom"></div>
+                                        <div class="cap-header-body">
+                                            <div class="cap-header__inner">
+                                                <div class="cap-header__content">
+                                                    <p class="cap-header__text">
+                                                        Наименование
+                                                    </p>
+                                                    <p class="cap-header__text">
+                                                        Количество
+                                                    </p>
+                                                    <p class="cap-header__text">
+                                                        Оформить
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <div class="content-wrap">
+                                            <div class="content-position">
+                                                <form class="product-card__form" action="#">
+                                                    <div class="product-card__row">
+                                                        <p class="product-card__name">100 х 4.8 мм / 1300 шт.</p>
+                                                        <div class="number">
+                                                            <input class="number__field" type="number" id="number1" min="1" max="100" step="1" value="2">
+                                                        </div>
+                                                        <div class="button-wrapper button-wrapper">
+                                                            <button class="btn btn-card">Заказать</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-card__row">
+                                                        <p class="product-card__name">120 х 4.8 мм / 1000 шт.</p>
+                                                        <div class="number">
+                                                            <input class="number__field" type="number" id="number2" min="1" max="10000" step="1" value="2">
+                                                        </div>
+                                                        <div class="button-wrapper button-wrapper">
+                                                            <button class="btn btn-card">Заказать</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-card__row">
+                                                        <p class="product-card__name">16 х 3.5 мм / 27 000 шт.</p>
+                                                        <div class="number">
+                                                            <input class="number__field" type="number" id="number3" min="1" max="10000" step="1" value="2">
+                                                        </div>
+                                                        <div class="button-wrapper button-wrapper">
+                                                            <button class="btn btn-card">Заказать</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-card__row">
+                                                        <p class="product-card__name">19 х 3.5 мм / 18 000 шт.</p>
+                                                        <div class="number">
+                                                            <input class="number__field" type="number" id="number4  " min="1" max="10000" step="1" value="2">
+                                                        </div>
+                                                        <div class="button-wrapper button-wrapper">
+                                                            <button class="btn btn-card">Заказать</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cap-strong cap-strong-bottom"></div>
+                                    <div class="cap"></div>
+                                </div>
+                            </div>
+                            <div class="product-card__box">
+                                <div class="product-card__btn_black">
+                                    <div class="item">
+                                        <div class="cap"></div>
+                                        <div class="cap-strong cap-strong-top"></div>
+                                        <a class="body" href="#">
+                                            <div class="content-wrap">
+                                                <div class="content-position">
+                                                    <div class="content">
+                                                        <span class="product-card__link">Задать вопрос менеджеру</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cap-strong cap-strong-bottom"></div>
+                                            <div class="cap"></div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="product-card__btn_red">
+                                    <div class="item">
+                                        <div class="cap"></div>
+                                        <div class="cap-strong cap-strong-top"></div>
+                                        <a class="body" href="#">
+                                            <div class="content-wrap">
+                                                <div class="content-position">
+                                                    <div class="content">
+                                                        <span class="product-card__btn">Скачать прайс шурупы</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cap-strong cap-strong-bottom"></div>
+                                            <div class="cap"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card__descr">
+                        <h4 class="product-card__descr-title">
+                            Описание
+                        </h4>
+                        <p class="product-card__descr-text">
+                            Нержавеющий шуруп с полукруглой головкой с буром - используются для крепления изделий и материалов к металлическим листам и каркасам. Бур на конце позволяет крепить изделие без предварительного сверления к металлу толщиной до 5мм. Плотная, самонарезающаяся
+                            однозаходная или двухзаходная резьба. Изготавливается из нержавеющей стали А2, А4.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <nav class="footer-menu">
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="#">
+								О компании
+							</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="#">
+								Каталог
+							</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="#">
+								Оплата
+							</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="#">
+								Доставка
+							</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="#">
+								Вакансии
+							</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="#">
+								Новости
+							</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a class="footer-menu__link" href="#">
+								Контакты
+							</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__inner">
+                    <a class="footer__logo" href="#">
+                        <img class="footer__logo-img" src="images/footer-logo.png" alt="footer-logo">
+                    </a>
+                    <address class="adress">
+						<p class="adress__street adress__street--white">Юрина, 273-Г</p>
+						<a class="adress__phone adress__phone--white" href="tel:+73852439247">+7 (3852) 43-92-47</a>
+					</address>
+                    <address class="adress">
+						<p class="adress__street adress__street--white">Балтийская, 55</p>
+						<a class="adress__phone adress__phone--white" href="tel:+73852458971">+7 (3852) 45-89-71</a>
+					</address>
+                    <address class="adress">
+						<p class="adress__street adress__street--white">Папанинцев, 111</p>
+						<a class="adress__phone adress__phone--white" href="tel:+73852227422">+7 (3852) 2 2-74-22</a>
+					</address>
+                    <div class="footer__icons">
+                        <a class="footer__icon" href="#">
+                            <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 9V42H33.0225L42.0451 33V0H9.02254L0 9Z" fill="#101010" class="path-1" />
+								<path class="path-2"
+									d="M30.894 25.8373C30.8698 25.7824 30.8472 25.7369 30.8262 25.7004C30.4792 25.0432 29.8161 24.2365 28.8373 23.2801L28.8166 23.2582L28.8063 23.2475L28.7958 23.2365H28.7853C28.341 22.7911 28.0597 22.4917 27.9419 22.3384C27.7264 22.0463 27.6781 21.7507 27.7959 21.4512C27.8791 21.2249 28.1918 20.747 28.7331 20.0168C29.0178 19.6299 29.2433 19.3197 29.4099 19.0861C30.611 17.4069 31.1317 16.3338 30.9719 15.8666L30.9099 15.7574C30.8682 15.6916 30.7606 15.6315 30.5872 15.5766C30.4135 15.5219 30.1914 15.5128 29.9206 15.5493L26.9217 15.5711C26.8731 15.553 26.8037 15.5547 26.7134 15.5766C26.6231 15.5986 26.5779 15.6096 26.5779 15.6096L26.5257 15.637L26.4843 15.6699C26.4496 15.6917 26.4114 15.73 26.3697 15.7848C26.3282 15.8394 26.2936 15.9034 26.2658 15.9764C25.9393 16.8598 25.5681 17.6811 25.1515 18.4403C24.8946 18.893 24.6587 19.2854 24.4433 19.6176C24.2281 19.9496 24.0476 20.1943 23.9019 20.3511C23.756 20.5081 23.6244 20.6339 23.5061 20.7289C23.3881 20.824 23.298 20.8641 23.2355 20.8494C23.173 20.8347 23.1141 20.8202 23.0583 20.8056C22.9612 20.7398 22.8831 20.6504 22.8242 20.5373C22.765 20.4241 22.7252 20.2817 22.7044 20.1102C22.6836 19.9385 22.6714 19.7908 22.6679 19.6667C22.6646 19.5427 22.6661 19.3673 22.6732 19.141C22.6804 18.9145 22.6836 18.7614 22.6836 18.681C22.6836 18.4036 22.6888 18.1024 22.6991 17.7776C22.7096 17.4527 22.7181 17.1953 22.7252 17.0057C22.7323 16.8158 22.7356 16.615 22.7356 16.4033C22.7356 16.1916 22.7233 16.0255 22.6991 15.905C22.6752 15.7847 22.6385 15.6678 22.5901 15.5546C22.5414 15.4414 22.4701 15.3539 22.3766 15.2918C22.2829 15.2297 22.1664 15.1804 22.0278 15.1439C21.6598 15.0563 21.1912 15.0089 20.6219 15.0016C19.3307 14.987 18.501 15.0747 18.1331 15.2645C17.9873 15.3447 17.8554 15.4543 17.7375 15.5929C17.6125 15.7536 17.595 15.8412 17.6853 15.8557C18.1019 15.9213 18.3968 16.0783 18.5703 16.3265L18.6329 16.458C18.6816 16.5529 18.7301 16.7209 18.7788 16.9618C18.8273 17.2026 18.8586 17.4691 18.8724 17.761C18.9071 18.294 18.9071 18.7503 18.8724 19.1298C18.8377 19.5096 18.8048 19.8052 18.7735 20.0169C18.7422 20.2286 18.6953 20.4002 18.6329 20.5315C18.5703 20.6629 18.5287 20.7433 18.5079 20.7724C18.487 20.8016 18.4697 20.8199 18.4559 20.8271C18.3657 20.8635 18.2718 20.882 18.1747 20.882C18.0774 20.882 17.9595 20.8309 17.8207 20.7286C17.6819 20.6263 17.5378 20.4859 17.3886 20.307C17.2393 20.1281 17.0709 19.878 16.8834 19.5568C16.6961 19.2357 16.5017 18.8561 16.3003 18.418L16.1338 18.1004C16.0296 17.896 15.8874 17.5985 15.7069 17.208C15.5263 16.8173 15.3666 16.4394 15.2279 16.0744C15.1724 15.9211 15.089 15.8044 14.978 15.7241L14.9259 15.6911C14.8912 15.662 14.8356 15.631 14.7593 15.598C14.6829 15.5651 14.6032 15.5414 14.5198 15.5269L11.6666 15.5487C11.375 15.5487 11.1772 15.6182 11.073 15.7569L11.0313 15.8225C11.0105 15.8591 11 15.9174 11 15.9978C11 16.0781 11.0208 16.1767 11.0625 16.2934C11.479 17.3229 11.932 18.3157 12.4214 19.2721C12.9108 20.2284 13.336 20.9988 13.6969 21.5825C14.0579 22.1666 14.4258 22.7179 14.8007 23.2361C15.1756 23.7544 15.4238 24.0866 15.5452 24.2326C15.6668 24.3788 15.7623 24.4881 15.8317 24.5611L16.092 24.8239C16.2586 24.9991 16.5033 25.209 16.8261 25.4535C17.149 25.6982 17.5065 25.939 17.8987 26.1765C18.291 26.4136 18.7474 26.607 19.2681 26.7567C19.7887 26.9064 20.2955 26.9665 20.7884 26.9375H21.986C22.2288 26.9155 22.4128 26.8352 22.5379 26.6966L22.5793 26.6417C22.6072 26.5981 22.6333 26.5304 22.6573 26.4393C22.6817 26.3481 22.6938 26.2475 22.6938 26.1382C22.6867 25.8243 22.7094 25.5414 22.7614 25.2896C22.8133 25.0378 22.8724 24.848 22.9386 24.7202C23.0047 24.5925 23.0793 24.4847 23.1624 24.3973C23.2456 24.3097 23.3049 24.2567 23.3397 24.2384C23.3743 24.2201 23.4019 24.2076 23.4227 24.2001C23.5893 24.1417 23.7854 24.1983 24.0112 24.37C24.2369 24.5416 24.4486 24.7534 24.6465 25.0052C24.8444 25.2572 25.0821 25.5399 25.3597 25.8537C25.6376 26.1677 25.8805 26.4011 26.0886 26.5546L26.2968 26.686C26.4359 26.7737 26.6164 26.854 26.8386 26.927C27.0604 27 27.2547 27.0182 27.4215 26.9818L30.0872 26.938C30.3509 26.938 30.556 26.8921 30.7015 26.801C30.8474 26.7098 30.934 26.6093 30.9619 26.4999C30.9898 26.3904 30.9913 26.2662 30.9672 26.1274C30.9425 25.9889 30.9182 25.8921 30.894 25.8373Z"
+									fill="white" />
+							</svg>
+                        </a>
+                        <a class="footer__icon" href="#">
+                            <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.0449219 9V42H33.0674L42.09 33V0H9.06746L0.0449219 9Z" fill="#101010"
+									class="path-1" />
+								<path class="path-2"
+									d="M25.4806 11H16.5192C13.4759 11 11 13.476 11 16.5193V25.4807C11 28.5241 13.4759 31 16.5192 31H25.4806C28.5241 31 31 28.524 31 25.4807V16.5193C31.0001 13.476 28.5241 11 25.4806 11ZM29.2256 25.4807C29.2256 27.5456 27.5456 29.2255 25.4807 29.2255H16.5192C14.4544 29.2256 12.7745 27.5456 12.7745 25.4807V16.5193C12.7745 14.4545 14.4544 12.7745 16.5192 12.7745H25.4806C27.5455 12.7745 29.2255 14.4545 29.2255 16.5193V25.4807H29.2256Z"
+									fill="white" />
+								<path class="path-2"
+									d="M21 15.8467C18.1583 15.8467 15.8465 18.1586 15.8465 21.0002C15.8465 23.8418 18.1583 26.1535 21 26.1535C23.8417 26.1535 26.1535 23.8418 26.1535 21.0002C26.1535 18.1586 23.8417 15.8467 21 15.8467ZM21 24.3789C19.1369 24.3789 17.621 22.8632 17.621 21.0001C17.621 19.1369 19.1368 17.6211 21 17.6211C22.8632 17.6211 24.379 19.1369 24.379 21.0001C24.379 22.8632 22.8631 24.3789 21 24.3789Z"
+									fill="white" />
+								<path class="path-2"
+									d="M26.3696 14.3421C26.0277 14.3421 25.6919 14.4805 25.4504 14.723C25.2078 14.9643 25.0683 15.3003 25.0683 15.6434C25.0683 15.9854 25.2079 16.3212 25.4504 16.5638C25.6918 16.8051 26.0277 16.9447 26.3696 16.9447C26.7127 16.9447 27.0475 16.8051 27.29 16.5638C27.5325 16.3212 27.6709 15.9853 27.6709 15.6434C27.6709 15.3003 27.5325 14.9643 27.29 14.723C27.0487 14.4805 26.7127 14.3421 26.3696 14.3421Z"
+									fill="white" />
+							</svg>
+                        </a>
+                        <a class="footer__icon" href="#">
+                            <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 9V42H33.0225L42.0451 33V0H9.02254L0 9Z" fill="#101010" class="path-1" />
+								<path class="path-2"
+									d="M11.3533 20.6719L15.9617 22.2523L17.7454 27.5232C17.8595 27.8608 18.3088 27.9856 18.607 27.7616L21.1758 25.8374C21.4451 25.6358 21.8286 25.6258 22.11 25.8134L26.7432 28.9042C27.0622 29.1173 27.5141 28.9567 27.5941 28.6025L30.9882 13.6015C31.0756 13.2146 30.6618 12.8919 30.2609 13.0343L11.3479 19.7382C10.8811 19.9036 10.8852 20.5108 11.3533 20.6719ZM17.4579 21.4111L26.4645 16.3141C26.6263 16.2228 26.7929 16.4239 26.6539 16.5424L19.2209 22.8909C18.9596 23.1144 18.7911 23.4134 18.7433 23.738L18.4901 25.4621C18.4566 25.6923 18.1047 25.7152 18.0355 25.4924L17.0617 22.3485C16.9502 21.9899 17.1127 21.6068 17.4579 21.4111Z"
+									fill="white" />
+							</svg>
+                        </a>
+                        <a class="footer__icon" href="#">
+                            <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.955078 9V42H33.9776L43.0001 33V0H9.97762L0.955078 9Z" fill="#101010"
+									class="path-1" />
+								<path class="path-2"
+									d="M29.0446 13.9044C27.164 12.0326 24.6622 11.0011 21.9995 11C19.3429 11 16.8371 12.0306 14.9441 13.9019C13.0478 15.7765 12.0024 18.2676 12 20.9074V20.9123C12.0003 22.51 12.4205 24.1218 13.2181 25.593L12.0273 31L17.5018 29.756C18.8883 30.454 20.4354 30.8221 21.9957 30.8227H21.9997C24.6559 30.8227 27.1617 29.792 29.055 27.9205C30.953 26.0444 31.9988 23.5565 32 20.915C32.0008 18.2922 30.9513 15.8024 29.0446 13.9044ZM21.9995 29.2617H21.996C20.595 29.2611 19.2068 28.9097 17.9817 28.2452L17.7228 28.1048L14.0825 28.932L14.8732 25.3419L14.7208 25.0793C13.9629 23.7736 13.5625 22.3322 13.5625 20.9106C13.5654 16.309 17.3498 12.561 21.9992 12.561C24.2454 12.5619 26.3558 13.4318 27.9418 15.0102C29.5518 16.6129 30.4381 18.7098 30.4374 20.9146C30.4355 25.5172 26.6503 29.2617 21.9995 29.2617Z"
+									fill="white" />
+								<path class="path-2"
+									d="M19.2786 16.5415H18.8402C18.6876 16.5415 18.4399 16.5986 18.2304 16.8264C18.0206 17.0544 17.4297 17.6054 17.4297 18.726C17.4297 19.8466 18.2494 20.9294 18.3637 21.0815C18.4781 21.2335 19.946 23.6065 22.271 24.5194C24.2032 25.2781 24.5965 25.1272 25.0157 25.0892C25.4352 25.0514 26.3691 24.5384 26.5597 24.0066C26.7504 23.4748 26.7504 23.0189 26.6932 22.9237C26.636 22.8288 26.4834 22.7719 26.2547 22.658C26.0259 22.544 24.9049 21.9837 24.6952 21.9076C24.4855 21.8318 24.333 21.7938 24.1804 22.0219C24.0279 22.2495 23.5787 22.7763 23.4452 22.9283C23.3118 23.0804 23.1783 23.0995 22.9496 22.9855C22.7208 22.8712 21.9916 22.6264 21.1178 21.8507C20.4377 21.2469 19.9657 20.4769 19.8322 20.249C19.6989 20.0211 19.818 19.8979 19.9327 19.7842C20.0355 19.6823 20.1744 19.5428 20.2888 19.4099C20.403 19.2768 20.4355 19.1819 20.5119 19.0299C20.5881 18.878 20.5499 18.7449 20.4928 18.6311C20.4355 18.5171 19.9966 17.3908 19.7931 16.9404H19.7933C19.6219 16.5611 19.4415 16.5482 19.2786 16.5415Z"
+									fill="white" />
+							</svg>
+                        </a>
+                    </div>
+                    <div class="button-wrapper button-wrapper--black">
+                        <a class="btn btn--black" href="#">Задать вопрос</a>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__copy">
+                        © 2021 «Профкрепеж». <br> Интернет-магазин крепежных изделий
+                    </div>
+                    <a class="footer__dev" href="#">
+						Разработка сайта “Альянс+”
+					</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
