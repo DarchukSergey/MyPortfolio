@@ -393,7 +393,7 @@ textarea.form-control:focus {
 .pt-page.pt-page-current .portfolio-grid,
 .pt-page.pt-page-current .blog-masonry {
     display: grid;
-    grid-template-columns: repeat(4, 4fr);
+    grid-template-columns: repeat(5, 4fr);
 }
 
 .pt-page-current *,
@@ -442,15 +442,10 @@ textarea.form-control:focus {
     height: 100%;
     overflow: hidden;
     background-color: #b7d0db;
-    background-image: url(../images/bg.jpg);
+    background-image: url('../images/bg.jpg');
 }
 
 .my-photo {
-    /* text-align: center;
-    z-index: 0;
-    background-color: #b7d0db;
-    place-items: center;
-    perspective: 1000px; */
     margin-bottom: 20px;
     perspective: 1000px;
     display: flex;
@@ -458,29 +453,6 @@ textarea.form-control:focus {
     padding: 20px;
 }
 
-
-/* .my-photo-small {
-    display: none
-} */
-
-
-/* .my-photo img {
-    width: 330px;
-    border-radius: 50%;
-    box-shadow: 2px 2px 10px 2px #23232399, 4px 4px 12px 4px #23232380, 6px 6px 14px 6px #2323234D;
-    transition: transform 5s ease-in;
-} */
-
-/* .photo-card {
-    width: 350px;
-    height: 350px;
-    text-align: center;
-    color: #fff;
-    transition: all 3s ease;
-    transform-style: preserve-3d;
-    position: relative;
-    text-shadow: 0px 5px 10px rgba( 0, 0, 0, 1);
-} */
 
 .front-img {
     /* max-width: 100%;
@@ -1804,7 +1776,7 @@ blockquote {
     .pt-page.pt-page-current .portfolio-grid,
     .pt-page.pt-page-current .blog-masonry {
         display: grid;
-        grid-template-columns: repeat(3, 2fr);
+        grid-template-columns: repeat(4, 2fr);
     }
 }
 
@@ -1905,7 +1877,7 @@ blockquote {
     .pt-page.pt-page-current .portfolio-grid,
     .pt-page.pt-page-current .blog-masonry {
         display: grid;
-        grid-template-columns: repeat(2, 2fr);
+        grid-template-columns: repeat(3, 2fr);
     }
 
     .site-title {
@@ -1994,13 +1966,19 @@ blockquote {
     .pt-page.pt-page-current .portfolio-grid,
     .pt-page.pt-page-current .blog-masonry {
         display: grid;
-        grid-template-columns: repeat(1, 2fr);
+        grid-template-columns: repeat(2, 2fr);
     }
 }
 
 @media only screen and (max-width:480px) {
     .portfolio-grid figure {
         width: 100%;
+    }
+
+    .pt-page.pt-page-current .portfolio-grid,
+    .pt-page.pt-page-current .blog-masonry {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
     }
 }
 
