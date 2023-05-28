@@ -1005,15 +1005,15 @@ ul.social-links li:last-child a {
 }
 
 .skill-percentage.skill-5 {
-    width: 75%;
+    width: 88%;
 }
 
 .skill-percentage.skill-6 {
-    width: 25%;
+    width: 40%;
 }
 
 .skill-percentage.skill-7 {
-    width: 35%;
+    width: 45%;
 }
 
 .skill-percentage.skill-8 {
@@ -1776,7 +1776,7 @@ blockquote {
     .pt-page.pt-page-current .portfolio-grid,
     .pt-page.pt-page-current .blog-masonry {
         display: grid;
-        grid-template-columns: repeat(4, 2fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
